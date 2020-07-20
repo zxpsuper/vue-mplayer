@@ -29,9 +29,12 @@ By the way, if you want to play m3u8(hls), you should import the hls before. for
 npm install vue-mplayer --sav
 ```
 
-```vue
-import MPlayer from 'vue-mplayer' Vue.component('MPlayer', MPlayer) // in
-template
+```js
+import MPlayer from 'vue-mplayer' 
+
+Vue.component('MPlayer', MPlayer) 
+
+// in template
 
 <MPlayer :playList="playList" theme="black" />
 ```
