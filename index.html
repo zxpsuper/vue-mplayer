@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Suporka Vue App</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0,user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+        <script src="./static/whiteScreenTime.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+    <link href="css/main.bcd2e216126dc5ea53ae.css" rel="stylesheet"></head>
+    <body>
+        <div id="app"></div>
+    <script type="text/javascript" src="js/vendor.74e15e0b21761c17a232.js"></script><script type="text/javascript" src="js/main.925648f9fdee6c5af118.js"></script></body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                    .register('./service-worker.js')
+                    .then(registration => {
+                        console.log('service-worker registed');
+                    })
+                    .catch(error => {
+                        console.log('service-worker registed error');
+                    });
+            });
+        }
+        
+    </script>
+</html>
