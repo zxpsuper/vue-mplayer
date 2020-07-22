@@ -53,7 +53,7 @@ Vue.component('MPlayer', MPlayer)
 
 ## Methods
 
-`play()` and `pause()` and `togglePlay(bool?)`
+`play()` and `pause()` and `togglePlay(bool?)` and `prev()` and `next()`
 
 ## Contributing
 

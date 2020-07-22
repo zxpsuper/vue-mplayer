@@ -1,6 +1,6 @@
 {
   "name": "vue-mplayer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vue music player",
   "main": "lib/vue-mplayer.js",
   "scripts": {
@@ -11,7 +11,8 @@
     "build:dll": "webpack --config ./build/webpack.dll.js",
     "build": "webpack --config build/webpack.prod.js",
     "build:lib": "webpack --config build/webpack.lib.js",
-    "publish": "npm run build && node commit/publish.js"
+    "publish:docs": "npm run build && node commit/publish.js",
+    "publish:npm": "npm run build:lib && npm publish"
   },
   "husky": {
     "hooks": {

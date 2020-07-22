@@ -12,7 +12,13 @@
         </div>
         <div>
             <div style="margin: 20px auto; display: inline-block;">
-                <MPlayer :playList="playList" theme="black" textColor="sdfa2" />
+                <MPlayer
+                    :playList="playList"
+                    theme="black"
+                    textColor="#42b983"
+                    background="#a5a5a5"
+                    iconColor="#666"
+                />
             </div>
         </div>
         <div class="flex space-around router">
