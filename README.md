@@ -22,6 +22,7 @@ By the way, if you want to play m3u8(hls), you should import the hls before. for
 ```html
 <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
 ```
+
 ## Usage
 
 ```
@@ -30,12 +31,11 @@ npm install vue-mplayer --sav
 ```
 
 ```js
-import MPlayer from 'vue-mplayer' 
+import MPlayer from 'vue-mplayer'
+Vue.component('MPlayer', MPlayer)
+```
 
-Vue.component('MPlayer', MPlayer) 
-
-// in template
-
+```html
 <MPlayer :playList="playList" theme="black" />
 ```
 
@@ -53,7 +53,12 @@ Vue.component('MPlayer', MPlayer)
 
 ## Methods
 
-`play()` and `pause()` and `togglePlay()`
+`play()` and `pause()` and `togglePlay(bool?)`
+
+## Contributing
+
+-   ⇄ Pull requests and ★ Stars are always welcome.
+-   For bugs and feature requests, please create an issue.
 
 ## License
 
